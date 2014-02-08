@@ -1,7 +1,7 @@
 {
-  "name": "node-xively",
+  "name": "xively",
   "description": "Xively API wrapper for nodejs",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/nazt/node-xively",
   "author": {
     "name": "Nat",
@@ -37,6 +37,7 @@
   },
   "keywords": [],
   "dependencies": {
-    "grunt-simple-mocha": "~0.4.0"
+    "grunt-simple-mocha": "~0.4.0",
+    "request": "~2.33.0"
   }
 }
