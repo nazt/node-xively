@@ -1,9 +1,10 @@
-# node-xively [![Build Status](https://secure.travis-ci.org/nazt/node-xively.png?branch=master)](http://travis-ci.org/nazt/node-xively)
+# node-xively [![Build Status](https://travis-ci.org/NAzT/node-xively.png?branch=master)](http://travis-ci.org/nazt/node-xively)
+
 
 Xively API wrapper for nodejs
 
 ## Getting Started
-Install the module with: `npm install node-xively`
+Install the module with: `npm install xively`
 
 ```javascript
 var node_xively = require('node-xively');
