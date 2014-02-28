@@ -1,4 +1,4 @@
-# node-xively [![Build Status](https://travis-ci.org/NAzT/node-xively.png?branch=master)](http://travis-ci.org/nazt/node-xively)
+
 
 
 Xively API wrapper for nodejs
@@ -14,13 +14,26 @@ var node_xively = require('node-xively');
 _(Coming soon)_
 
 ## Examples
-_(Coming soon)_
-
+```
+var XivelyClient = require('xively');
+var x = new XivelyClient();
+x.setKey('blahblah');
+var dp = {
+      "version":"1.0.0",
+       "datastreams" : [
+	  {
+	      "id" : "temperature",
+	      "current_value" : 30
+	  }
+	]
+}
+x.feed.new('522171645', {
+      data_point: dp,
+      callback: function(e) { console.log(e); }
+}); 
+```
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-## Release History
-_(Nothing yet)_
 
 ## License
 Copyright (c) 2014 Nat  
